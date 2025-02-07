@@ -1,0 +1,17 @@
+
+package assignment8;
+import java.util.Scanner;
+public class Exercise6 {
+    public static void main(String[] args) {
+          System.out.println("nhap chuoi :");
+        Scanner nhap = new Scanner(System.in);
+        String s1 = nhap.nextLine();
+        System.out.println("--------------------------");
+        System.out.println("Chuoi ban dau la :"+s1);
+        System.out.println("nhap tu bi thay the :");
+        String tu1=nhap.nextLine();
+        System.out.println("Nhap tu thay the :");
+        String tu2=nhap.nextLine();
+        System.out.println("Chuoi moi : "+s1.replace(tu1, tu2));
+    }
+}
