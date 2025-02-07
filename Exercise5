@@ -1,0 +1,21 @@
+package assignment8;
+
+import java.util.Scanner;
+
+public class Exercise5 {
+
+    public static void main(String[] args) {
+        System.out.println("nhap chuoi :");
+        Scanner nhap = new Scanner(System.in);
+        String s1 = nhap.nextLine();
+        System.out.println("nhap ki tu muon dem :");
+        char kiTu=nhap.next().charAt(0);
+        int dem = 0;
+        for (int i = 0; i < s1.length(); i++) {
+            if (s1.charAt(i)==kiTu) {
+                dem++;
+            }
+        }
+        System.out.println("So lan xuat hien :" + dem);
+    }
+}
