@@ -1,0 +1,25 @@
+package assignment8;
+
+import java.util.Scanner;
+
+public class Exercise2 {
+
+    public static void main(String[] args) {
+        Scanner nhap = new Scanner(System.in);
+        System.out.println("Nhap chuoi :");
+        String chuoi = nhap.nextLine();
+        int dem = 0;
+        boolean tu = false;
+        for (int i = 0; i < chuoi.length(); i++) {
+            if (chuoi.charAt(i) != ' ') {
+                if (!tu) {
+                    dem++;
+                    tu = true;
+                }
+            } else {
+                tu = false;
+            }
+        }
+        System.out.println("So tu la :" + dem);
+    }
+}
