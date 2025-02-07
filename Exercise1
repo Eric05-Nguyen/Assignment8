@@ -1,0 +1,17 @@
+package assignment8;
+
+import java.util.Scanner;
+
+public class Exercise1 {
+
+    public static void main(String[] args) {
+        Scanner nhap = new Scanner(System.in);
+        System.out.println("Nhap vao mot chuoi ky tu :");
+        String chuoi = nhap.nextLine();
+        int dem = 0;
+        for (int i = 0; i < chuoi.length(); i++) {
+            dem++;
+        }
+        System.out.println("so ky tu dem duoc la :" + dem);
+    }
+}
